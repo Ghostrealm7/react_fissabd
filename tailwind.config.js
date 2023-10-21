@@ -16,6 +16,7 @@ export default {
       'white': '#FFFFFF',
       'text-color': '#000248',
       'background-color': '#808080',
+      'grey':'#ededf0',
     },
   },
   plugins: [],

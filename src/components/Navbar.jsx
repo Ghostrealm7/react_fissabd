@@ -7,7 +7,7 @@ export default function Navbar() {
      
   }
   return (
-    <div className="bg-white ">
+    <div className=" fixed top-0 w-full bg-white">
       <div className='flex items-center justify-between mx-auto w-[90%] max-w-6xl'>
         <div>
           <img className="h-16"src="../src/images/fissa_logo.png" alt="FISSA BD" />

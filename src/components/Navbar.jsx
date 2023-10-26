@@ -15,9 +15,9 @@ export default function Navbar() {
         </div>
         <div className='md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[4.9%] md:w-auto w-full flex items-center px-5'>
             <ul className='flex md:flex-row flex-col md:items-center md:gap-[3vw] gap-[8vw] text-text-color'>
-                <li> <a className="hover:text-green" href="#">Home</a></li>
-                <li> <Link className='hover:text-green' to ="/#section-1"> Services </Link></li>
-                <li> <Link className='hover:text-green' to ="/#section-4"> Packages </Link></li>
+                <li> <Link className='hover:text-green' smooth to ="#"> Home </Link></li>
+                <li> <Link className='hover:text-green' smooth to ="/#section-1"> Services </Link></li>
+                <li> <Link className='hover:text-green' smooth to ="/#section-4"> Packages </Link></li>
                 <li> <a className="hover:text-green" href="">Bill Payments</a></li>
                 <li> <a className="hover:text-green" href="">About Us</a></li>
                 <li> <a className="hover:text-green" href="">Contact Us</a></li>

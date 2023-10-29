@@ -47,9 +47,9 @@ export default function Navbar() {
                 <li> <Link className='hover:text-green' smooth to ="#"> Home </Link></li>
                 <li> <Link className='hover:text-green' smooth to ="/#section-1"> Services </Link></li>
                 <li> <Link className='hover:text-green' smooth to ="/#section-4"> Packages </Link></li>
-                <li> <Link className='hover:text-green' smooth to ="/#"> Bill Payments </Link></li>
-                <li> <Link className='hover:text-green' smooth to ="/#"> About Us </Link></li>
-                <li> <Link className='hover:text-green' smooth to ="/#"> Contact Us </Link></li>      
+                <li> <Link className='hover:text-green' smooth to ="/#bill-payments"> Bill Payments </Link></li>
+                <li> <Link className='hover:text-green' smooth to ="/#about-us"> About Us </Link></li>
+                <li> <Link className='hover:text-green' smooth to ="/#footer"> Contact Us </Link></li>      
             </ul>
         </div>   
       

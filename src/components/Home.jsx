@@ -191,7 +191,7 @@ export default function Home() {
         </div>
     </div>
 
-    <div className='SECTION-5 max-w-6xl mx-auto flex gap-4 py-20 md:flex-row flex-col md:px-0 px-8'>
+    <div className='max-w-6xl mx-auto flex gap-4 py-20 md:flex-row flex-col md:px-0 px-8' id='about-us'>
         <div className='md:w-2/4 pt-12 pl-4'>
           <h1 className='text-4xl font-bold leading-tight'>Leading nationwide internet service provider since 2003</h1>
               <p className='pt-8'>Sylnet has been one of the leading internet service providers in Sylhet, Bangladesh. At Sylnet we are committed to providing the highest quality services to you. we provide faster internet connection for home and corporate users according to the need of customer’s aspiration.We have 17 years experienced and expert team to provide any solutions about broadband internet connectivity within a short time. we are currently serving more than 155 Corporate and more than 7,000 Home users.</p>
@@ -203,7 +203,7 @@ export default function Home() {
         </div>
     </div>
 
-   <div className='bg-text-color'>
+   <div className='bg-text-color' id='bill-payments'>
     <div className='max-w-6xl mx-auto text-center pt-20 pb-40 md:px-0 px-8'> 
         <div className='flex items-center flex-col gap-3' data-aos="zoom-in">
           <h1 className='text-4xl font-bold leading-tight text-white'> Pay your bills through Mobile banking</h1>
@@ -228,7 +228,7 @@ export default function Home() {
     </div>
     </div>
 
-    <Footer />
+    <Footer/>
 
   </>
   )

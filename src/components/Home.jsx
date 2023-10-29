@@ -205,19 +205,19 @@ export default function Home() {
 
    <div className='bg-text-color'>
     <div className='max-w-6xl mx-auto text-center pt-20 pb-40 md:px-0 px-8'> 
-        <div className='flex items-center flex-col gap-3'>
+        <div className='flex items-center flex-col gap-3' data-aos="zoom-in">
           <h1 className='text-4xl font-bold leading-tight text-white'> Pay your bills through Mobile banking</h1>
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>
         </div>
 
         <div className='flex flex-wrap justify-center pt-16 gap-10'>
-          <div className='w-80  h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green'> 
+          <div className='w-80  h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green' data-aos="zoom-in-right" data-aos-duration="1500"> 
             <img src="/images/bkash.png" alt="FISSA BD" />
             <h3 className='text-xl font-bold'>Bkash</h3>
             <p className=''>Merchant: 101-202-303</p>
           </div>
 
-          <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl'>
+          <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl' data-aos="zoom-in-left" data-aos-duration="1500">
             <div>
                 <img src="/images/rocketpay.png" alt="FISSA BD" />
             </div>

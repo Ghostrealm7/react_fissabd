@@ -21,67 +21,66 @@ export default function Home() {
   <>
     <div className="bg-gradient-to-r from-gOne to-gTwo w-full text-text-color h-screen">
       <div className='flex justify-between max-w-6xl mx-auto md:pt-40 pt-24 md:text-left text-center md:px-0 px-8'>
-        <div className='' data-aos="fade-left" data-aos-duration="3000">
+        <div className='' data-aos="fade-down" data-aos-duration="1500"> 
           <p>Starting at ৳900/month</p>
           <h1 className= 'md:text-6xl text-3xl font-bold pt-10 md:leading-tight'>Ultra-Fast & Reliable Internet Service In Sylhet With 24/7 Quick Support</h1>
           <p className='py-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem explicabo, repudiandae vel veritatis magnam!</p>
           <button className='bg-green text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>SEE OUR PLANS</button>
         </div>
-        <div className='md:inline hidden'>
-          <img data-aos="fade-up" data-aos-duration="1500" className="pt-12 "src="/images/rocket.png" alt="FISSA BD" />
+        <div className='md:inline hidden' data-aos="fade-up" data-aos-duration="1500">
+          <img className="pt-12 "src="/images/rocket.png" alt="FISSA BD" />
         </div>
       </div>
     </div>
 
-      <div id="section-1" className='max-w-6xl mx-auto text-center py-20 md:px-0 px-8'>
-        <div data-aos="fade-up" className='flex items-center flex-col gap-3 pt-4'> 
+    <div id="section-1" className='max-w-6xl mx-auto text-center py-20 md:px-0 px-8'>
+        <div data-aos="zoom-in" className='flex items-center flex-col gap-3 pt-4'> 
           <h1 className='text-4xl font-bold leading-tight'> Our Services</h1>
           <div className="w-36 h-1.5 rounded-lg bg-green"></div>
         </div>
 
-        <p data-aos="fade-right" data-aos-duration="3000" className='pt-12'>leo leo leo leo leo leo caprio caprio caprio need more text here im sleepy Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae rem quaerat, magnam nulla doloribus reiciendis temporibus! Ut deserunt dolores nihil illo rem repellendus, ad incidunt doloremque eligendi magnam autem earum.</p>
+        <p data-aos="zoom-in" className='pt-12'>leo leo leo leo leo leo caprio caprio caprio need more text here im sleepy Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae rem quaerat, magnam nulla doloribus reiciendis temporibus! Ut deserunt dolores nihil illo rem repellendus, ad incidunt doloremque eligendi magnam autem earum.</p>
         <div className='flex flex-wrap justify-center pt-12 gap-10'>
 
-          <div data-aos="fade-down-right" data-aos-duration="1500" className='w-80  h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green shadow-lg'> 
+          <div data-aos="zoom-in" data-aos-duration="1500" className='w-80  h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green shadow-lg'> 
             <FaBuilding className='text-6xl mx-auto'/>
             <h3 className='text-xl font-bold pt-7'>Corporate Internet</h3>
             <p className='pt-5'>In addition to broadband internet services, we help our clients build, connect, operate and maintain their own SOHO or office network.</p>
           </div>
 
-          <div data-aos="fade-down" data-aos-duration="1500" className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl shadow-lg'>
+          <div data-aos="zoom-in" data-aos-duration="1500" className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl shadow-lg'>
             <IoHome className='text-6xl mx-auto'/>
             <h3 className='text-xl font-bold pt-7'>Home Internet</h3>
             <p className='pt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eveniet?</p>
           </div>
 
-          <div data-aos="fade-down-left" data-aos-duration="1500" className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl shadow-lg'>
+          <div data-aos="zoom-in" data-aos-duration="1500" className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl shadow-lg'>
             <IoWifi className='text-6xl mx-auto'/>
           <h3 className='text-xl font-bold pt-7'>Wifi Hotspot</h3>
           <p className='pt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eveniet?</p>
           </div>
 
-          <div data-aos="fade-up-right" data-aos-duration="1500" className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl shadow-lg'>
+          <div data-aos="zoom-in" data-aos-duration="1500" className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl shadow-lg'>
             <IoVideocam className='text-6xl mx-auto'/>
           <h3 className='text-xl font-bold pt-7'>Video Surveillance</h3>
           <p className='pt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eveniet?</p>
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="1500" className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl shadow-lg'>
+          <div data-aos="zoom-in" data-aos-duration="1500" className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl shadow-lg'>
             <IoTv className='text-6xl mx-auto'/>
           <h3 className='text-xl font-bold pt-7'>IPTV Services</h3>
           <p className='pt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eveniet?</p>
           </div>
 
-          <div data-aos="fade-up-left" data-aos-duration="1500" className='w-80 h-80 p-7 rounded-xl bg-white border-2 border-grey hover:border-green shadow-lg'>
+          <div data-aos="zoom-in" data-aos-duration="1500" className='w-80 h-80 p-7 rounded-xl bg-white border-2 border-grey hover:border-green shadow-lg'>
             <FaPhoneAlt className='text-6xl mx-auto'/>
           <h3 className='text-xl font-bold pt-7'>IP Telephony</h3>
           <p className='pt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eveniet?</p>
           </div>
-
         </div>
-      </div>
+    </div>
                              
-      <div className='max-w-6xl mx-auto flex md:flex-row flex-col py-20 md:px-0 px-8'>
+    <div className='max-w-6xl mx-auto flex md:flex-row flex-col py-20 md:px-0 px-8'>
         <div className='md:w-2/4 pt-6'>
           <img src="/images/card_one.png" alt="IMAGE" />
         </div>
@@ -94,19 +93,19 @@ export default function Home() {
               <p className='flex pt-8'> <FcCheckmark className='text-2xl pr-1'/>100% Connection Uptime</p>
               <p className='flex pt-8'> <FcCheckmark className='text-2xl pr-1'/>100% Connection Uptime</p>
         </div>
-      </div>
+    </div>
 
-      <div className='max-w-6xl mx-auto py-20 text-center md:px-0 px-8'> 
+    <div className='max-w-6xl mx-auto py-20 text-center md:px-0 px-8'> 
         <div className='flex items-center flex-col gap-3 pt-4'>
-          <h1 className='text-4xl font-bold leading-tight'> How to apply for connection?</h1>
+          <h1 className='text-4xl font-bold leading-tight' data-aos="zoom-in"> How to apply for connection?</h1>
           <div className="w-48 h-1.5 rounded-lg bg-green"></div>
         </div>
-        <p className='pt-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita.</p>
+        <p className='pt-12' data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita.</p>
       
-        <div className='flex flex-wrap justify-center pt-12 gap-10'>
+        <div className='flex flex-wrap justify-center pt-12 gap-10' data-aos="fade-right" data-aos-duration="1500">
           <div className='w-64  h-80 py-7 px-5 bg-white border-2 border-grey hover:border-green rounded-xl'> 
             <FaHandPointUp className='text-6xl mx-auto'/>
-            <h3 className='text-xl font-bold pt-7'>Select a package</h3>
+            <h3 className='text-xl font-bold pt-7' >Select a package</h3>
             <p className='pt-5'>Select a package from our packages list which is most suitable for your daily use.</p>
           </div>
 
@@ -128,14 +127,14 @@ export default function Home() {
           <p className='pt-4'>Our technical team will be contact with you and  provide you the connection as soon possible.</p>
           </div>
         </div>
-      </div>
+    </div>
 
-      <div className='max-w-6xl mx-auto text-center py-20 md:px-0 px-8' id="section-4">
+    <div className='max-w-6xl mx-auto text-center py-20 md:px-0 px-8' id="section-4">
         <div data-aos="fade-up" className='flex items-center flex-col gap-3 pt-4'>
           <h1 className='text-4xl font-bold leading-tight'> Our Packages</h1>
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>
         </div>
-        <p data-aos="fade-left" data-aos-duration="3000" className='pt-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita.</p>
+        <p data-aos="zoom-in"className='pt-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita.</p>
         
         <div className='flex flex-wrap justify-center pt-12 gap-10'>
           <div data-aos="zoom-in-right" data-aos-duration="1500" className='w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
@@ -190,9 +189,9 @@ export default function Home() {
             <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
           </div>
         </div>
-      </div>
+    </div>
 
-      <div className='SECTION-5 max-w-6xl mx-auto flex gap-4 py-20 md:flex-row flex-col md:px-0 px-8'>
+    <div className='SECTION-5 max-w-6xl mx-auto flex gap-4 py-20 md:flex-row flex-col md:px-0 px-8'>
         <div className='md:w-2/4 pt-12 pl-4'>
           <h1 className='text-4xl font-bold leading-tight'>Leading nationwide internet service provider since 2003</h1>
               <p className='pt-8'>Sylnet has been one of the leading internet service providers in Sylhet, Bangladesh. At Sylnet we are committed to providing the highest quality services to you. we provide faster internet connection for home and corporate users according to the need of customer’s aspiration.We have 17 years experienced and expert team to provide any solutions about broadband internet connectivity within a short time. we are currently serving more than 155 Corporate and more than 7,000 Home users.</p>
@@ -202,10 +201,10 @@ export default function Home() {
         <div className='md:w-2/4 pt-6 justify-center'>
           <img className='h-3/4'src="/images/card_two.png" alt="IMAGE" />
         </div>
-      </div>
+    </div>
 
    <div className='bg-text-color'>
-    <div className='max-w-6xl mx-auto text-center pt-20 pb-40 '> 
+    <div className='max-w-6xl mx-auto text-center pt-20 pb-40 md:px-0 px-8'> 
         <div className='flex items-center flex-col gap-3'>
           <h1 className='text-4xl font-bold leading-tight text-white'> Pay your bills through Mobile banking</h1>
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>

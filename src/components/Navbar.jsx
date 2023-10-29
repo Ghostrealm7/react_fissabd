@@ -37,10 +37,10 @@ export default function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
   
   return (
-    <div className="z-[20] fixed top-0 w-full bg-white shadow">
-      <div className='flex items-center justify-between mx-auto w-[90%] max-w-6xl'>
+    <div className="z-[20] fixed top-0 w-full bg-white shadow ">
+      <div className='flex items-center justify-between mx-auto max-w-6xl overflow-hidden md:px-0 px-8'>
         <div className=''>
-          <img className="h-16"src="../src/images/fissa_logo.png" alt="FISSA BD" />
+          <img className="h-16"src="/images/fissa_logo.png" alt="FISSA BD" />
         </div>
         <div className='' >
             <ul className='hidden md:flex md:flex-row md:items-center gap-[3vw] text-text-color'>
@@ -53,7 +53,7 @@ export default function Navbar() {
             </ul>
         </div>   
       
-        <div className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden' onClick={()=>setShowLinks(!showLinks)}>
+        <div className='text-3xl fixed right-7 top-4 cursor-pointer md:hidden' onClick={()=>setShowLinks(!showLinks)}>
               {showLinks ? <FaTimes/> : <FaBars/>}
         </div>        
       </div>

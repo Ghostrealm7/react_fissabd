@@ -20,21 +20,21 @@ export default function Home() {
   return (
   <>
     <div className="bg-gradient-to-r from-gOne to-gTwo w-full text-text-color h-screen">
-      <div className='flex justify-between max-w-6xl mx-auto md:pt-40 pt-24'>
+      <div className='flex justify-between max-w-6xl mx-auto md:pt-40 pt-24 md:text-left text-center md:px-0 px-8'>
         <div className='' data-aos="fade-left" data-aos-duration="3000">
           <p>Starting at ৳900/month</p>
-          <h1 className= 'md:text-6xl text-2xl font-bold pt-10 leading-tight'>Ultra-Fast & Reliable Internet Service In Sylhet With 24/7 Quick Support</h1>
+          <h1 className= 'md:text-6xl text-3xl font-bold pt-10 md:leading-tight'>Ultra-Fast & Reliable Internet Service In Sylhet With 24/7 Quick Support</h1>
           <p className='py-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem explicabo, repudiandae vel veritatis magnam!</p>
           <button className='bg-green text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>SEE OUR PLANS</button>
         </div>
-        <div>
-          <img data-aos="fade-up" data-aos-duration="1500" className="pt-12 "src="../src/images/rocket.png" alt="FISSA BD" />
+        <div className='md:inline hidden'>
+          <img data-aos="fade-up" data-aos-duration="1500" className="pt-12 "src="/images/rocket.png" alt="FISSA BD" />
         </div>
       </div>
     </div>
 
-      <div id="section-1" className='max-w-6xl mx-auto text-center py-20'>
-        <div data-aos="fade-up" className='flex items-center flex-col gap-3 pt-4'>
+      <div id="section-1" className='max-w-6xl mx-auto text-center py-20 md:px-0 px-8'>
+        <div data-aos="fade-up" className='flex items-center flex-col gap-3 pt-4'> 
           <h1 className='text-4xl font-bold leading-tight'> Our Services</h1>
           <div className="w-36 h-1.5 rounded-lg bg-green"></div>
         </div>
@@ -81,11 +81,11 @@ export default function Home() {
         </div>
       </div>
                              
-      <div className='max-w-6xl mx-auto flex py-20'>
-        <div className='w-2/4 pt-6'>
-          <img src="../src/images/card_one.png" alt="IMAGE" />
+      <div className='max-w-6xl mx-auto flex md:flex-row flex-col py-20 md:px-0 px-8'>
+        <div className='md:w-2/4 pt-6'>
+          <img src="/images/card_one.png" alt="IMAGE" />
         </div>
-        <div className='w-2/4 pt-12 pr-4'>
+        <div className='md:w-2/4 pt-12 pr-4'>
           <h1 className='text-4xl font-bold leading-tight'>Benefits of using our home and corporate internet services</h1>
               <p className='pt-8'>The following facilities will be provided in all of our home and corporate internet connections</p>
               <p className='flex pt-8'> <FcCheckmark className='text-2xl pr-1'/>100% Connection Uptime</p>
@@ -96,14 +96,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='max-w-6xl mx-auto py-20 text-center'> 
-        <div data-aos="fade-left" data-aos-duration="1500" className='flex items-center flex-col gap-3 pt-4'>
+      <div className='max-w-6xl mx-auto py-20 text-center md:px-0 px-8'> 
+        <div className='flex items-center flex-col gap-3 pt-4'>
           <h1 className='text-4xl font-bold leading-tight'> How to apply for connection?</h1>
           <div className="w-48 h-1.5 rounded-lg bg-green"></div>
         </div>
         <p className='pt-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita.</p>
       
-        <div data-aos="fade-right" data-aos-duration="1500" className='flex flex-wrap justify-center pt-12 gap-10'>
+        <div className='flex flex-wrap justify-center pt-12 gap-10'>
           <div className='w-64  h-80 py-7 px-5 bg-white border-2 border-grey hover:border-green rounded-xl'> 
             <FaHandPointUp className='text-6xl mx-auto'/>
             <h3 className='text-xl font-bold pt-7'>Select a package</h3>
@@ -130,7 +130,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='max-w-6xl mx-auto text-center py-20' id="section-4">
+      <div className='max-w-6xl mx-auto text-center py-20 md:px-0 px-8' id="section-4">
         <div data-aos="fade-up" className='flex items-center flex-col gap-3 pt-4'>
           <h1 className='text-4xl font-bold leading-tight'> Our Packages</h1>
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>
@@ -192,20 +192,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='SECTION-5 max-w-6xl mx-auto flex gap-4 py-20'>
-        <div className='w-2/4 pt-12 pl-4'>
+      <div className='SECTION-5 max-w-6xl mx-auto flex gap-4 py-20 md:flex-row flex-col md:px-0 px-8'>
+        <div className='md:w-2/4 pt-12 pl-4'>
           <h1 className='text-4xl font-bold leading-tight'>Leading nationwide internet service provider since 2003</h1>
               <p className='pt-8'>Sylnet has been one of the leading internet service providers in Sylhet, Bangladesh. At Sylnet we are committed to providing the highest quality services to you. we provide faster internet connection for home and corporate users according to the need of customer’s aspiration.We have 17 years experienced and expert team to provide any solutions about broadband internet connectivity within a short time. we are currently serving more than 155 Corporate and more than 7,000 Home users.</p>
               <p className='pt-8'>John Doe</p>
               <p className=''>CEO</p>
         </div>
-        <div className='w-2/4 pt-6'>
-          <img className='h-3/4'src="../src/images/card_two.png" alt="IMAGE" />
+        <div className='md:w-2/4 pt-6 justify-center'>
+          <img className='h-3/4'src="/images/card_two.png" alt="IMAGE" />
         </div>
       </div>
 
    <div className='bg-text-color'>
-    <div className='max-w-6xl mx-auto text-center pt-20 pb-40'> 
+    <div className='max-w-6xl mx-auto text-center pt-20 pb-40 '> 
         <div className='flex items-center flex-col gap-3'>
           <h1 className='text-4xl font-bold leading-tight text-white'> Pay your bills through Mobile banking</h1>
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>
@@ -213,14 +213,14 @@ export default function Home() {
 
         <div className='flex flex-wrap justify-center pt-16 gap-10'>
           <div className='w-80  h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green'> 
-            <img src="../src/images/bkash.png" alt="FISSA BD" />
+            <img src="/images/bkash.png" alt="FISSA BD" />
             <h3 className='text-xl font-bold'>Bkash</h3>
             <p className=''>Merchant: 101-202-303</p>
           </div>
 
           <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl'>
             <div>
-                <img src="../src/images/rocketpay.png" alt="FISSA BD" />
+                <img src="/images/rocketpay.png" alt="FISSA BD" />
             </div>
             <h3 className='text-xl font-bold'>Rocket</h3>
             <p className=''>Merchant: 101-202-303</p>

@@ -6,12 +6,12 @@ import {FaSquareTwitter} from 'react-icons/fa6'
 
 export default function Footer() {
   return (
-    <div className='border-t-2 border-grey'>
-        <div className=''>
-            <div className='grid grid-cols-4 py-10 gap-7 max-w-6xl mx-auto justify-items-center items-center'>
+    <div className='border-t-2 border-grey md:px-0 px-8'>
+        <div className='max-w-6xl mx-auto'>
+            <div className='flex flex-wrap md:flex-row flex-col md:justify-between py-8 gap-7'>
                 <div>
                     <h4 className='mb-2 text-lg font-bold'>FissaBD</h4>
-                    <p className='text-sm'> 4th Floor, Manru Shopping City, Chowhatta, Sylhet 3100, Bangladesh.</p>
+                    <h4 className='text-sm'> 4th Floor, Manru Shopping City, Chowhatta, Sylhet 3100, Bangladesh.</h4>
                 </div>
                 
                 <div>
@@ -42,7 +42,7 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className='flex max-w-6xl mx-auto justify-between pb-8'>
+            <div className='flex md:flex-row flex-col md:justify-between pb-8'>
                 <div className='flex gap-4'>
                         <FaSquareFacebook className='text-4xl'/>
                         <FaYoutube className='text-4xl'/>

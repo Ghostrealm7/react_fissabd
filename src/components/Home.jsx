@@ -3,17 +3,12 @@ import { useEffect } from "react";
 import AOS from 'aos';
 
 import {FaBuilding} from 'react-icons/fa6'
-import { IoHome } from "react-icons/io5";
-import {IoWifi} from 'react-icons/io5'
-import {IoVideocam} from 'react-icons/io5'
-import {IoTv} from 'react-icons/io5'
-import {FaPhoneAlt} from 'react-icons/fa'
+import { IoHome, IoWifi, IoVideocam, IoTv } from "react-icons/io5";
+import {FaPhoneAlt, FaHandPointUp} from 'react-icons/fa'
 import {FcCheckmark} from 'react-icons/fc'
-import {FaHandPointUp} from 'react-icons/fa'
 import {SiGoogleforms} from 'react-icons/si'
-import {BsFillCreditCard2BackFill} from 'react-icons/bs'
+import {BsFillCreditCard2BackFill, BsBoxFill} from 'react-icons/bs'
 import {GrConnect} from 'react-icons/gr'
-import {BsBoxFill} from 'react-icons/bs'
 
 import Footer from './Footer'
 
@@ -25,10 +20,10 @@ export default function Home() {
   return (
   <>
     <div className="bg-gradient-to-r from-gOne to-gTwo w-full text-text-color h-screen">
-      <div className='flex justify-between max-w-6xl mx-auto pt-40'>
+      <div className='flex justify-between max-w-6xl mx-auto md:pt-40 pt-24'>
         <div className='' data-aos="fade-left" data-aos-duration="3000">
           <p>Starting at ৳900/month</p>
-          <h1 className= 'text-6xl font-bold pt-10 leading-tight'>Ultra-Fast & Reliable Internet Service In Sylhet With 24/7 Quick Support</h1>
+          <h1 className= 'md:text-6xl text-2xl font-bold pt-10 leading-tight'>Ultra-Fast & Reliable Internet Service In Sylhet With 24/7 Quick Support</h1>
           <p className='py-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem explicabo, repudiandae vel veritatis magnam!</p>
           <button className='bg-green text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>SEE OUR PLANS</button>
         </div>
@@ -156,7 +151,7 @@ export default function Home() {
             <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
           </div>
 
-          <div data-aos="zoom-out-down" data-aos-duration="1500" className='w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
+          <div data-aos="zoom-in-up" data-aos-duration="1500" className='w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
             <BsBoxFill className='text-5xl mx-auto'/>
             <h3 className='text-xl font-bold pt-7'>GOLD</h3>
             <p className=' text-3xl text-green'>৳5,000</p>
@@ -169,7 +164,7 @@ export default function Home() {
             <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
           </div>
 
-          <div data-aos="zoom-out-up" data-aos-duration="1500" className='w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
+          <div data-aos="zoom-in-up" data-aos-duration="1500" className='w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
             <BsBoxFill className='text-5xl mx-auto'/>
             <h3 className='text-xl font-bold pt-7'>PLATINUM</h3>
             <p className=' text-3xl text-green'>৳8,000</p>

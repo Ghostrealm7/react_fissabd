@@ -2,20 +2,6 @@ import {React, useState} from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import {FaBars, FaTimes} from 'react-icons/fa'
 
-// function NavLinks() {
-//   return (
-//     <>  
-//       <li> <Link className='hover:text-green' smooth to ="#"> Home </Link></li>
-//       <li> <Link className='hover:text-green' smooth to ="/#section-1"> Services </Link></li>
-//       <li> <Link className='hover:text-green' smooth to ="/#section-4"> Packages </Link></li>
-//       <li> <Link className='hover:text-green' smooth to ="/#"> Bill Payments </Link></li>
-//       <li> <Link className='hover:text-green' smooth to ="/#"> About Us </Link></li>
-//       <li> <Link className='hover:text-green' smooth to ="/#"> Contact Us </Link></li>      
-//     </>
-//   );
-// };
-//<div className={`md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[4.9%] md:w-auto w-full flex items-center px-5 ${showLinks ? '':'hidden'}`}>
-
 function Navlinks() {
   return (
     <div className='' >

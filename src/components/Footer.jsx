@@ -6,7 +6,7 @@ import {FaSquareTwitter} from 'react-icons/fa6'
 
 export default function Footer() {
   return (
-    <div className='border-t-2 border-grey md:px-0 px-8' id='footer'>
+    <div className='border-t-2 border-grey xl:px-0 px-8' id='footer'>
         <div className='max-w-6xl mx-auto'>
             <div className='flex flex-wrap md:flex-row flex-col md:justify-between py-8 gap-7'>
                 <div>

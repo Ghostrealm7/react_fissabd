@@ -1,18 +1,17 @@
-import React from 'react'
+import React, { useRef, useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
 import AOS from 'aos';
 import { useNavigate} from 'react-router-dom';
-import { useRef, useEffect } from 'react';
-import { register } from 'swiper/element/bundle';
-
-register();
-
 import {FaBuilding, FaEarthAmericas} from 'react-icons/fa6'
-import { IoHome, IoWifi, IoVideocam, IoTv } from "react-icons/io5";
-import {FaPhoneAlt, FaHandPointUp} from 'react-icons/fa'
+import { IoHome, IoWifi} from "react-icons/io5";
 import {FcCheckmark} from 'react-icons/fc'
-import {SiGoogleforms} from 'react-icons/si'
-import {BsFillCreditCard2BackFill, BsBoxFill} from 'react-icons/bs'
-import {GrConnect} from 'react-icons/gr'
+import {BsBoxFill} from 'react-icons/bs'
+
 
 import Footer from './Footer'
 
@@ -34,63 +33,50 @@ export default function Home() {
         AOS.init();
       }, [])
 
-    const swiperElRef = useRef(null);
-
-    useEffect(() => {
-        // listen for Swiper events using addEventListener
-      swiperElRef.current.addEventListener('swiperprogress', (e) => {
-        const [swiper, progress] = e.detail;
-        console.log(progress);
-      });
-    
-    swiperElRef.current.addEventListener('swiperslidechange', (e) => {
-          console.log('slide changed');
-      });
-    }, []);
-    
-    
   return (
   <>
-    <div className="bg-gradient-to-r from-gOne to-gTwo w-full text-text-color ">
-
-      <div className='max-w-6xl mx-auto md:pt-30 pt-24'>
-          <swiper-container
-            ref={swiperElRef}
-            slides-per-view="1"
-            navigation="true"
+    <div className="w-full">
+          <Swiper
+            spaceBetween={30}
+            effect={'fade'}
+            navigation={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[EffectFade, Navigation, Pagination, Autoplay]}
+            className="mySwiper"
           >
-            <swiper-slide>
-            <div className='flex justify-center items-center sm:text-left text-center px-14 bg-bottom bg-no-repeat bg-[url("/images/cloud.png")]'>
+            <SwiperSlide>
+                <img className='w-full h-560' src="/images/banner1.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img className='w-full h-560' src="/images/banner2.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img className='w-full h-560' src="/images/banner3.jpg" />
+            </SwiperSlide>
+          </Swiper>
+    </div>
+    
+    <div className='bg-gradient-to-r from-gOne to-gTwo w-full'>
+    <div className='bg-cover bg-no-repeat bg-[url("/images/cloud.png")]'> 
+            <div className='flex justify-center items-center sm:text-left text-center max-w-6xl mx-auto'>
               <div className='w-3/4'> 
-                <p>Starting at ৳800/month</p>
-                <h1 className= 'xl:text-5xl text-3xl font-bold pt-10 leading-8'>Lightning-Fast Connectivity & The Future of Reliable 24/7 Internet Performance</h1>
-                <p className='py-12'>Recognized as Dhaka city's most dependable local internet service provider, FISSA has been bridging digital divides since July 2001. Our mission? Delivering high-speed broadband at affordable rates, right to the doorsteps of our cherished local community.</p>
-                <button className='bg-green text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>SEE OUR PLANS</button>
+                <p className='mt-8'>Starting at ৳800/month</p>
+                <h1 className='sm:text-4xl text-2xl font-bold mt-8'>Lightning-Fast Connectivity & The Future of Reliable 24/7 Internet Performance</h1>
+                <p className=''>Recognized as Dhaka city's most dependable local internet service provider, FISSA has been bridging digital divides since July 2001. Our mission? Delivering high-speed broadband at affordable rates, right to the doorsteps of our cherished local community.</p>
+                <div className='mt-8'>
+                  <button className='bg-green text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>SEE OUR PLANS</button>
+                </div>
               </div>
-              <div className='md:inline hidden w-1/4 p-3'>
-                <img className="pt-12"src="/images/rocket.png" alt="FISSA BD" />
+              <div className='md:flex hidden items-center justify-center w-1/4'>
+                <img className="h-560 pt-12"src="/images/rocket.png" alt="FISSA BD" />
               </div>
-            </div>
-            </swiper-slide>
-                
-            <swiper-slide>
-            <div className='sm:text-left text-center px-14 pb-12 bg-text-color'>
-              <div className='' data-aos="fade-down" data-aos-duration="1500"> 
-                <p>Starting at ৳900/month</p>
-                <h1 className= 'xl:text-6xl text-3xl font-bold pt-10 md:leading-tight'>Fastest Internet in DHAKA</h1>
-                <p className='py-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem explicabo, repudiandae vel veritatis magnam!</p>
-                <p className='py-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem explicabo, repudiandae vel veritatis magnam!</p>
-                <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem explicabo, repudiandae vel veritatis magnam!</p>
-                <button className='bg-green text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>SEE OUR PLANS</button>
-              </div>
-            </div>
-            </swiper-slide>
-
-            <swiper-slide>Slide 3
-              <img className="h-16"src="/images/fissa_logo.png" alt="FISSA BD" />
-            </swiper-slide>
-          </swiper-container>
-        
+            </div>         
       </div>
     </div>
     
@@ -133,15 +119,29 @@ export default function Home() {
         <p data-aos="zoom-in"className='pt-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita.</p>
           {/* flex flex-wrap justify-center */}
         <div className='pt-12 gap-10'>
-        <swiper-container
-            ref={swiperElRef}
-            slides-per-view="3"
-            navigation="true"
-            pagination="false"
-
+        <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            navigation={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+            }}
+            modules={[EffectFade, Navigation, Pagination]}
+            className="mySwiper"
           >
-             <swiper-slide>Slide 1
-              <div data-aos="zoom-in-right" data-aos-duration="1500" className='package mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
+            <SwiperSlide>
+            <div data-aos="zoom-in-right" data-aos-duration="1500" className='w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
                 <BsBoxFill className='text-5xl mx-auto'/>
                 <h3 className='text-xl font-bold pt-7'>SILVER</h3>
                 <p className=' text-3xl text-green'>৳3,000</p>
@@ -153,24 +153,39 @@ export default function Home() {
                 <p >24/7 Support</p>
                 <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
               </div>
-             </swiper-slide>
-
-             <swiper-slide>Slide 2
+            </SwiperSlide>
+            <SwiperSlide>
               <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
-                <BsBoxFill className='text-5xl mx-auto'/>
-                <h3 className='text-xl font-bold pt-7'>GOLD</h3>
-                <p className=' text-3xl text-green'>৳5,000</p>
-                <p > 20 Mbps Internet Speed</p>
-                <p > 35 Mbps Facebook Speed</p>
-                <p > 35 Mbps YouTube Speed</p>
-                <p >BDIX Speed Unlimited</p>
-                <p >Movies, IPTV & Torrent Unlimited</p>
-                <p >24/7 Support</p>
-                <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
-              </div>
-             </swiper-slide>
+                  <BsBoxFill className='text-5xl mx-auto'/>
+                  <h3 className='text-xl font-bold pt-7'>GOLD</h3>
+                  <p className=' text-3xl text-green'>৳5,000</p>
+                  <p > 20 Mbps Internet Speed</p>
+                  <p > 35 Mbps Facebook Speed</p>
+                  <p > 35 Mbps YouTube Speed</p>
+                  <p >BDIX Speed Unlimited</p>
+                  <p >Movies, IPTV & Torrent Unlimited</p>
+                  <p >24/7 Support</p>
+                  <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
+                  <BsBoxFill className='text-5xl mx-auto'/>
+                  <h3 className='text-xl font-bold pt-7'>GOLD</h3>
+                  <p className=' text-3xl text-green'>৳5,000</p>
+                  <p > 20 Mbps Internet Speed</p>
+                  <p > 35 Mbps Facebook Speed</p>
+                  <p > 35 Mbps YouTube Speed</p>
+                  <p >BDIX Speed Unlimited</p>
+                  <p >Movies, IPTV & Torrent Unlimited</p>
+                  <p >24/7 Support</p>
+                  <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
+                </div>
+            </SwiperSlide>
 
-             <swiper-slide>Slide 3
+
+      
+            <SwiperSlide>
               <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
                 <BsBoxFill className='text-5xl mx-auto'/>
                 <h3 className='text-xl font-bold pt-7'>PLATINUM</h3>
@@ -183,9 +198,9 @@ export default function Home() {
                 <p >24/7 Support</p>
                 <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
               </div>
-             </swiper-slide>
+             </SwiperSlide>
 
-             <swiper-slide>Slide 4
+             <SwiperSlide>
               <div data-aos="zoom-in-left" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
                 <BsBoxFill className='text-5xl mx-auto'/>
                 <h3 className='text-xl font-bold pt-7'>DIAMOND</h3>
@@ -198,14 +213,73 @@ export default function Home() {
                 <p >24/7 Support</p>
                 <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
               </div>
-             </swiper-slide>
+             </SwiperSlide> 
+            <SwiperSlide>Slide 4</SwiperSlide>
+            <SwiperSlide>Slide 5</SwiperSlide>
+            <SwiperSlide>Slide 6</SwiperSlide>
+            <SwiperSlide>Slide 7</SwiperSlide>
+            <SwiperSlide>Slide 8</SwiperSlide>
+            <SwiperSlide>Slide 9</SwiperSlide>
+             {/* <SwiperSlide>Slide 1
+              <div data-aos="zoom-in-right" data-aos-duration="1500" className='package mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
+                <BsBoxFill className='text-5xl mx-auto'/>
+                <h3 className='text-xl font-bold pt-7'>SILVER</h3>
+                <p className=' text-3xl text-green'>৳3,000</p>
+                <p >12 Mbps Internet Speed</p>
+                <p >35 Mbps Facebook Speed</p>
+                <p >35 Mbps YouTube Speed</p>
+                <p >BDIX Speed Unlimited</p>
+                <p >Movies, IPTV & Torrent Unlimited</p>
+                <p >24/7 Support</p>
+                <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
+              </div>
+             </SwiperSlide>
 
-             <swiper-slide>Slide 5</swiper-slide>
-             <swiper-slide>Slide 6</swiper-slide>
-             <swiper-slide>Slide 7</swiper-slide>
-             <swiper-slide>Slide 8</swiper-slide>
+             <SwiperSlide>
+              <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
+                <BsBoxFill className='text-5xl mx-auto'/>
+                <h3 className='text-xl font-bold pt-7'>GOLD</h3>
+                <p className=' text-3xl text-green'>৳5,000</p>
+                <p > 20 Mbps Internet Speed</p>
+                <p > 35 Mbps Facebook Speed</p>
+                <p > 35 Mbps YouTube Speed</p>
+                <p >BDIX Speed Unlimited</p>
+                <p >Movies, IPTV & Torrent Unlimited</p>
+                <p >24/7 Support</p>
+                <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
+              </div>
+             </SwiperSlide>
 
-          </swiper-container>
+             <SwiperSlide>
+              <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
+                <BsBoxFill className='text-5xl mx-auto'/>
+                <h3 className='text-xl font-bold pt-7'>PLATINUM</h3>
+                <p className=' text-3xl text-green'>৳8,000</p>
+                <p > 30 Mbps Internet Speed</p>
+                <p > 35 Mbps Facebook Speed</p>
+                <p > 35 Mbps YouTube Speed</p>
+                <p >BDIX Speed Unlimited</p>
+                <p >Movies, IPTV & Torrent Unlimited</p>
+                <p >24/7 Support</p>
+                <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
+              </div>
+             </SwiperSlide>
+
+             <SwiperSlide>
+              <div data-aos="zoom-in-left" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
+                <BsBoxFill className='text-5xl mx-auto'/>
+                <h3 className='text-xl font-bold pt-7'>DIAMOND</h3>
+                <p className=' text-3xl text-green'>৳10,000</p>
+                <p > 40 Mbps Internet Speed</p>
+                <p > 35 Mbps Facebook Speed</p>
+                <p > 35 Mbps YouTube Speed</p>
+                <p >BDIX Speed Unlimited</p>
+                <p >Movies, IPTV & Torrent Unlimited</p>
+                <p >24/7 Support</p>
+                <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
+              </div>
+             </SwiperSlide> */}
+        </Swiper>
         </div>
     </div>
 
@@ -225,13 +299,13 @@ export default function Home() {
     </div>
 
    <div className='bg-text-color' id='bill-payments'>
-    <div className='max-w-6xl mx-auto text-center pt-20 pb-40 xl:px-0 px-8'> 
+    <div className='max-w-6xl mx-auto text-center pt-20 pb-12 xl:px-0 px-8'> 
         <div className='flex items-center flex-col gap-3' data-aos="zoom-in">
           <h1 className='text-4xl font-bold leading-tight text-white'> Pay your bills through Mobile banking</h1>
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>
         </div>
 
-        <div className='flex flex-wrap justify-center pt-16 gap-10'>
+        {/* <div className='flex flex-wrap justify-center pt-16 gap-10'>
           <div className='w-80  h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green' data-aos="zoom-in-right" data-aos-duration="1500"> 
             <img src="/images/bkash.png" alt="FISSA BD" />
             <h3 className='text-xl font-bold'>Bkash</h3>
@@ -245,12 +319,13 @@ export default function Home() {
             <h3 className='text-xl font-bold'>Rocket</h3>
             <p className=''>Merchant: 101-202-303</p>
           </div>
-        </div>
+        </div> */}
     </div>
     </div>
 
     {/* PAYMENT WEB */}
 
+    <div className='bg-text-color'>
     <div className='py-12 grid grid-cols-5 grid-rows-2 max-w-5xl mx-auto' id='payment'>
       <div className=''>1
         <div className=''>
@@ -258,43 +333,44 @@ export default function Home() {
         </div>
       </div>
       <div className='flex justify-center items-center'>
-        <div className='border-2 rounded-full w-28 h-28 overflow-hidden '>
+        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 flex items-center'>
         <img src="/images/bkash.png" alt="FISSA BD" />
         </div>
       </div>
-      <div className=''>3
-        <div className='border-2 rounded-full w-28 h-28'>
-          
+      <div className='flex justify-center items-center'>
+        <div className=''>
+          <img src="" />
         </div>
       </div>
-      <div className=''>4
-        <div className=''>
-          
+      <div className='flex justify-center items-center'>
+        <div className='rounded-full w-28 h-28 overflow-hidden hover:border-green hover:border-4 bg-white flex items-center'>
+          <img src="/images/rocketpay.png" alt="FISSA BD" />    
         </div>
       </div>
       <div>5</div>
       <div>6</div>
-      <div className=''>7
-        <div className='border-2 rounded-full w-28 h-28'>
-          
+      <div className='flex justify-self-end items-center'>
+        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 flex items-center'>
+          <img src="/images/rocketpay.png" alt="FISSA BD" />
         </div>
       </div>
-      <div className='flex justify-center'>
-        <div className='w-28 h-28 justify-self-center'>
-            <FaEarthAmericas className="text-6xl mx-auto"/>
+      <div className=''>
+        <div className=''>
+            <FaEarthAmericas className="text-7xl mx-auto text-white"/>
         </div>
       </div>
-      <div className=''>1
-        <div className='border-2 rounded-full w-28 h-28'>
-          
+      <div className=''>
+        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 flex items-center'>
+          <img src="/images/rocketpay.png" alt="FISSA BD" />
         </div>
       </div>
-      <div className=''>10
+      <div className=''>
         <div className=''>
           
         </div>
       </div>
 
+    </div>
     </div>
 
     <Footer/>

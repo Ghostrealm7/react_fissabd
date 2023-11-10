@@ -34,6 +34,12 @@ export default function Home() {
     const navigateRocket = () => {
                   navigate('/rocket');
                 };
+    const navigateNagad = () => {
+                  navigate('/nagad');
+                };
+    const navigateUpay = () => {
+                  navigate('/upay');
+                };
               
     useEffect(() => {
         AOS.init();
@@ -262,34 +268,26 @@ export default function Home() {
               className="mySwiper"
             >
             <SwiperSlide>
-              <div className='w-80 h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green mx-auto hover:cursor-pointer' onClick={navigateBkash}> 
-                <img src="/images/bkash.png" alt="FISSA BD" />
-                <h3 className='text-xl font-bold'>Bkash</h3>
-                <p className=''>Merchant: 101-202-303</p>
+              <div className='w-70 h-70 p-7 bg-white border-2 rounded-xl border-grey hover:border-green mx-auto hover:cursor-pointer' onClick={navigateBkash}> 
+                <img src="/images/bkash2.png" alt="FISSA BD" />   
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto hover:cursor-pointer' onClick={navigateRocket}>
+              <div className='w-70 h-70 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto hover:cursor-pointer' onClick={navigateRocket}>
                 <img src="/images/rocketpay.png" alt="FISSA BD" />
-                <h3 className='text-xl font-bold'>Rocket</h3>
-                <p className=''>Merchant: 101-202-303</p>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto hover:cursor-pointer' onClick={navigateBkash}>
-                <img src="/images/rocketpay.png" alt="FISSA BD" />
-                <h3 className='text-xl font-bold'>Nagad</h3>
-                <p className=''>Merchant: 101-202-303</p>
+              <div className='w-70 h-70 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto hover:cursor-pointer' onClick={navigateBkash}>
+                <img src="/images/nagad.png" alt="FISSA BD" />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto hover:cursor-pointer' onClick={navigateBkash}>
-                <img src="/images/rocketpay.png" alt="FISSA BD" />
-                <h3 className='text-xl font-bold'>Upay</h3>
-                <p className=''>Merchant: 101-202-303</p>
+              <div className='w-70 h-70 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto hover:cursor-pointer' onClick={navigateUpay}>
+                <img className="mx-auto" src="/images/upay.png" alt="FISSA BD" />
               </div>
             </SwiperSlide>
           </Swiper>
@@ -299,43 +297,42 @@ export default function Home() {
 
     {/* PAYMENT WEB */}
 
-    <div className='bg-text-color sm:block hidden'>
+    <div className='bg-text-color sm:block hidden pb-20'>
     <div className='py-12 grid grid-cols-5 grid-rows-2 max-w-5xl mx-auto' id='payment'>
+      <div data-aos="zoom-in-right" data-aos-duration="1500" className='flex justify-center items-center'>
+        <div className='rounded-full w-36 h-36 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateBkash}>
+        <img src="/images/bkash2.png" alt="FISSA BD" />
+        </div>
+      </div>
       <div className=''>
         <div className=''>
-          
         </div>
       </div>
-      <div className='flex justify-center items-center'>
-        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateBkash}>
-        <img src="/images/bkash.png" alt="FISSA BD" />
-        </div>
-      </div>
-      <div className='flex justify-center items-center'>
+      <div data-aos="zoom-out"className='flex justify-center items-center'>
         <div className=''>
-          <img src="" />
-        </div>
-      </div>
-      <div className='flex justify-center items-center'>
-        <div className='rounded-full w-28 h-28 overflow-hidden hover:border-green hover:border-4 hover:cursor-pointer bg-white flex items-center' onClick={navigateRocket}>
-          <img src="/images/rocketpay.png" alt="FISSA BD" />    
+        <FaEarthAmericas className="text-9xl mx-auto text-white"/>
         </div>
       </div>
       <div>5</div>
+      <div data-aos="zoom-in-left" data-aos-duration="1500" className='flex justify-center items-center'>
+        <div className='rounded-full w-36 h-36 overflow-hidden hover:border-green hover:border-4 hover:cursor-pointer bg-white flex items-center' onClick={navigateRocket}>
+          <img src="/images/rocketpay.png" alt="FISSA BD" />    
+        </div>
+      </div>
       <div>6</div>
-      <div className='flex justify-self-end items-center'>
-        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateBkash}>
-          <img src="/images/rocketpay.png" alt="FISSA BD" />
+      <div data-aos="fade-up" data-aos-duration="1500" className='flex justify-center items-center'>
+        <div className='rounded-full w-36 h-36 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateNagad}>
+          <img src="/images/nagad.png" alt="FISSA BD" />
         </div>
       </div>
       <div className=''>
         <div className=''>
-            <FaEarthAmericas className="text-7xl mx-auto text-white"/>
+            
         </div>
       </div>
-      <div className=''>
-        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateBkash}>
-          <img src="/images/rocketpay.png" alt="FISSA BD" />
+      <div data-aos="fade-up" data-aos-duration="1500" className='flex justify-center items-center'>
+        <div className='rounded-full w-36 h-36 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateUpay}>
+          <img src="/images/upay.png" alt="FISSA BD" />
         </div>
       </div>
       <div className=''>

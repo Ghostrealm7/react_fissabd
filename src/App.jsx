@@ -9,6 +9,8 @@ import HomeInternet from './components/HomeInternet'
 import BandwidthReseller from './components/BandwidthResller'
 import PaymentBkash from './components/PaymentBkash'
 import PaymentRocket from './components/PaymentRocket'
+import PaymentNagad from './components/PaymentNagad'
+import PaymentUpay from './components/PaymentUpay'
 
 export default function App() {
   return (
@@ -24,7 +26,8 @@ export default function App() {
           <Route path="/bandwidth-internet" element={<BandwidthReseller />}/>
           <Route path="/bkash" element={<PaymentBkash />}/>
           <Route path="/rocket" element={<PaymentRocket />}/>
-
+          <Route path="/nagad" element={<PaymentNagad />}/>
+          <Route path="/upay" element={<PaymentUpay />}/>
         </Routes>
       </Router>
     </div>

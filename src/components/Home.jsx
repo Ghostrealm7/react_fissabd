@@ -298,7 +298,7 @@ export default function Home() {
     {/* PAYMENT WEB */}
 
     <div className='bg-text-color sm:block hidden pb-20'>
-    <div className='py-12 grid grid-cols-5 grid-rows-2 max-w-5xl mx-auto' id='payment'>
+    <div className='py-12 grid grid-cols-5 grid-rows-2 max-w-5xl mx-auto xl:px-0 px-8' id='payment'>
       <div data-aos="zoom-in-right" data-aos-duration="1500" className='flex justify-center items-center'>
         <div className='rounded-full w-36 h-36 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateBkash}>
         <img src="/images/bkash2.png" alt="FISSA BD" />
@@ -308,7 +308,7 @@ export default function Home() {
         <div className=''>
         </div>
       </div>
-      <div data-aos="zoom-out"className='flex justify-center items-center'>
+      <div data-aos="zoom-out" className='flex justify-center items-center'>
         <div className=''>
         <FaEarthAmericas className="text-9xl mx-auto text-white"/>
         </div>

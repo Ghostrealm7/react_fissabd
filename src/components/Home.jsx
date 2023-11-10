@@ -262,7 +262,7 @@ export default function Home() {
               className="mySwiper"
             >
             <SwiperSlide>
-              <div className='w-80 h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green mx-auto'> 
+              <div className='w-80 h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green mx-auto hover:cursor-pointer' onClick={navigateBkash}> 
                 <img src="/images/bkash.png" alt="FISSA BD" />
                 <h3 className='text-xl font-bold'>Bkash</h3>
                 <p className=''>Merchant: 101-202-303</p>
@@ -270,7 +270,7 @@ export default function Home() {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto'>
+              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto hover:cursor-pointer' onClick={navigateRocket}>
                 <img src="/images/rocketpay.png" alt="FISSA BD" />
                 <h3 className='text-xl font-bold'>Rocket</h3>
                 <p className=''>Merchant: 101-202-303</p>
@@ -278,7 +278,7 @@ export default function Home() {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto'>
+              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto hover:cursor-pointer' onClick={navigateBkash}>
                 <img src="/images/rocketpay.png" alt="FISSA BD" />
                 <h3 className='text-xl font-bold'>Nagad</h3>
                 <p className=''>Merchant: 101-202-303</p>
@@ -286,7 +286,7 @@ export default function Home() {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto'>
+              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto hover:cursor-pointer' onClick={navigateBkash}>
                 <img src="/images/rocketpay.png" alt="FISSA BD" />
                 <h3 className='text-xl font-bold'>Upay</h3>
                 <p className=''>Merchant: 101-202-303</p>

@@ -312,9 +312,9 @@ export default function Home() {
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>
         </div>
 
+        
 
-
-        <div className='flex flex-wrap justify-center pt-16 gap-10'>
+        {/* <div className='flex flex-wrap justify-center pt-16 gap-10'>
           <div className='w-80  h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green' data-aos="zoom-in-right" data-aos-duration="1500"> 
             <img src="/images/bkash.png" alt="FISSA BD" />
             <h3 className='text-xl font-bold'>Bkash</h3>
@@ -328,7 +328,7 @@ export default function Home() {
             <h3 className='text-xl font-bold'>Rocket</h3>
             <p className=''>Merchant: 101-202-303</p>
           </div>
-        </div>
+        </div> */}
     </div>
     </div>
 

@@ -124,7 +124,7 @@ export default function Home() {
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>
         </div>
         <p data-aos="zoom-in"className='pt-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita.</p>
-          {/* flex flex-wrap justify-center */}
+
         <div className='pt-12 gap-10'>
         <Swiper
             slidesPerView={1}
@@ -161,20 +161,7 @@ export default function Home() {
                 <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
-                  <BsBoxFill className='text-5xl mx-auto'/>
-                  <h3 className='text-xl font-bold pt-7'>GOLD</h3>
-                  <p className=' text-3xl text-green'>৳5,000</p>
-                  <p > 20 Mbps Internet Speed</p>
-                  <p > 35 Mbps Facebook Speed</p>
-                  <p > 35 Mbps YouTube Speed</p>
-                  <p >BDIX Speed Unlimited</p>
-                  <p >Movies, IPTV & Torrent Unlimited</p>
-                  <p >24/7 Support</p>
-                  <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
-                </div>
-            </SwiperSlide>
+
             <SwiperSlide>
               <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
                   <BsBoxFill className='text-5xl mx-auto'/>
@@ -190,8 +177,21 @@ export default function Home() {
                 </div>
             </SwiperSlide>
 
+            <SwiperSlide>
+              <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
+                  <BsBoxFill className='text-5xl mx-auto'/>
+                  <h3 className='text-xl font-bold pt-7'>GOLD</h3>
+                  <p className=' text-3xl text-green'>৳5,000</p>
+                  <p > 20 Mbps Internet Speed</p>
+                  <p > 35 Mbps Facebook Speed</p>
+                  <p > 35 Mbps YouTube Speed</p>
+                  <p >BDIX Speed Unlimited</p>
+                  <p >Movies, IPTV & Torrent Unlimited</p>
+                  <p >24/7 Support</p>
+                  <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
+                </div>
+            </SwiperSlide>
 
-      
             <SwiperSlide>
               <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
                 <BsBoxFill className='text-5xl mx-auto'/>
@@ -227,65 +227,6 @@ export default function Home() {
             <SwiperSlide>Slide 7</SwiperSlide>
             <SwiperSlide>Slide 8</SwiperSlide>
             <SwiperSlide>Slide 9</SwiperSlide>
-             {/* <SwiperSlide>Slide 1
-              <div data-aos="zoom-in-right" data-aos-duration="1500" className='package mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
-                <BsBoxFill className='text-5xl mx-auto'/>
-                <h3 className='text-xl font-bold pt-7'>SILVER</h3>
-                <p className=' text-3xl text-green'>৳3,000</p>
-                <p >12 Mbps Internet Speed</p>
-                <p >35 Mbps Facebook Speed</p>
-                <p >35 Mbps YouTube Speed</p>
-                <p >BDIX Speed Unlimited</p>
-                <p >Movies, IPTV & Torrent Unlimited</p>
-                <p >24/7 Support</p>
-                <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
-              </div>
-             </SwiperSlide>
-
-             <SwiperSlide>
-              <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
-                <BsBoxFill className='text-5xl mx-auto'/>
-                <h3 className='text-xl font-bold pt-7'>GOLD</h3>
-                <p className=' text-3xl text-green'>৳5,000</p>
-                <p > 20 Mbps Internet Speed</p>
-                <p > 35 Mbps Facebook Speed</p>
-                <p > 35 Mbps YouTube Speed</p>
-                <p >BDIX Speed Unlimited</p>
-                <p >Movies, IPTV & Torrent Unlimited</p>
-                <p >24/7 Support</p>
-                <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
-              </div>
-             </SwiperSlide>
-
-             <SwiperSlide>
-              <div data-aos="zoom-in-up" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
-                <BsBoxFill className='text-5xl mx-auto'/>
-                <h3 className='text-xl font-bold pt-7'>PLATINUM</h3>
-                <p className=' text-3xl text-green'>৳8,000</p>
-                <p > 30 Mbps Internet Speed</p>
-                <p > 35 Mbps Facebook Speed</p>
-                <p > 35 Mbps YouTube Speed</p>
-                <p >BDIX Speed Unlimited</p>
-                <p >Movies, IPTV & Torrent Unlimited</p>
-                <p >24/7 Support</p>
-                <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
-              </div>
-             </SwiperSlide>
-
-             <SwiperSlide>
-              <div data-aos="zoom-in-left" data-aos-duration="1500" className='mx-auto w-64 py-7 px-5 bg-white border-2 border-grey rounded-xl shadow-lg'> 
-                <BsBoxFill className='text-5xl mx-auto'/>
-                <h3 className='text-xl font-bold pt-7'>DIAMOND</h3>
-                <p className=' text-3xl text-green'>৳10,000</p>
-                <p > 40 Mbps Internet Speed</p>
-                <p > 35 Mbps Facebook Speed</p>
-                <p > 35 Mbps YouTube Speed</p>
-                <p >BDIX Speed Unlimited</p>
-                <p >Movies, IPTV & Torrent Unlimited</p>
-                <p >24/7 Support</p>
-                <button className=' mt-5 bg-text-color text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>Get Started</button>
-              </div>
-             </SwiperSlide> */}
         </Swiper>
         </div>
     </div>
@@ -312,31 +253,55 @@ export default function Home() {
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>
         </div>
 
-        
+        <div className='block sm:hidden py-12'>
+          <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              navigation={true}
+              modules={[EffectFade, Navigation, Pagination]}
+              className="mySwiper"
+            >
+            <SwiperSlide>
+              <div className='w-80 h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green mx-auto'> 
+                <img src="/images/bkash.png" alt="FISSA BD" />
+                <h3 className='text-xl font-bold'>Bkash</h3>
+                <p className=''>Merchant: 101-202-303</p>
+              </div>
+            </SwiperSlide>
 
-        {/* <div className='flex flex-wrap justify-center pt-16 gap-10'>
-          <div className='w-80  h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green' data-aos="zoom-in-right" data-aos-duration="1500"> 
-            <img src="/images/bkash.png" alt="FISSA BD" />
-            <h3 className='text-xl font-bold'>Bkash</h3>
-            <p className=''>Merchant: 101-202-303</p>
-          </div>
-
-          <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl' data-aos="zoom-in-left" data-aos-duration="1500">
-            <div>
+            <SwiperSlide>
+              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto'>
                 <img src="/images/rocketpay.png" alt="FISSA BD" />
-            </div>
-            <h3 className='text-xl font-bold'>Rocket</h3>
-            <p className=''>Merchant: 101-202-303</p>
-          </div>
-        </div> */}
+                <h3 className='text-xl font-bold'>Rocket</h3>
+                <p className=''>Merchant: 101-202-303</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto'>
+                <img src="/images/rocketpay.png" alt="FISSA BD" />
+                <h3 className='text-xl font-bold'>Nagad</h3>
+                <p className=''>Merchant: 101-202-303</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className='w-80 h-80 p-7 bg-white border-2 border-grey hover:border-green rounded-xl mx-auto'>
+                <img src="/images/rocketpay.png" alt="FISSA BD" />
+                <h3 className='text-xl font-bold'>Upay</h3>
+                <p className=''>Merchant: 101-202-303</p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
     </div>
     </div>
 
     {/* PAYMENT WEB */}
 
-    <div className='bg-text-color'>
+    <div className='bg-text-color sm:block hidden'>
     <div className='py-12 grid grid-cols-5 grid-rows-2 max-w-5xl mx-auto' id='payment'>
-      <div className=''>1
+      <div className=''>
         <div className=''>
           
         </div>
@@ -382,7 +347,7 @@ export default function Home() {
     </div>
     </div>
 
-
+    
 
     <Footer/>
 

@@ -28,6 +28,12 @@ export default function Home() {
     const navigateBandwidthReseller = () => {
                   navigate('/bandwidth-reseller');
                 };
+    const navigateBkash = () => {
+                  navigate('/bkash');
+                };
+    const navigateRocket = () => {
+                  navigate('/rocket');
+                };
               
     useEffect(() => {
         AOS.init();
@@ -40,6 +46,7 @@ export default function Home() {
             spaceBetween={30}
             effect={'fade'}
             navigation={true}
+            loop={true}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
@@ -62,9 +69,9 @@ export default function Home() {
           </Swiper>
     </div>
     
-    <div className='bg-gradient-to-r from-gOne to-gTwo w-full'>
-    <div className='bg-cover bg-no-repeat bg-[url("/images/cloud.png")]'> 
-            <div className='flex justify-center items-center sm:text-left text-center max-w-6xl mx-auto'>
+    <div className='bg-gradient-to-r from-gOne to-gTwo w-full '>
+    <div className='bg-cover bg-no-repeat bg-[url("/images/cloud.png")] h-auto'> 
+            <div className='flex justify-center items-center xl:text-left text-center max-w-6xl mx-auto xl:px-0 px-8'>
               <div className='w-3/4'> 
                 <p className='mt-8'>Starting at ৳800/month</p>
                 <h1 className='sm:text-4xl text-2xl font-bold mt-8'>Lightning-Fast Connectivity & The Future of Reliable 24/7 Internet Performance</h1>
@@ -73,8 +80,8 @@ export default function Home() {
                   <button className='bg-green text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>SEE OUR PLANS</button>
                 </div>
               </div>
-              <div className='md:flex hidden items-center justify-center w-1/4'>
-                <img className="h-560 pt-12"src="/images/rocket.png" alt="FISSA BD" />
+              <div className='md:flex hidden items-center justify-center w-1/4 h-2/5 py-8'>
+                <img className=""src="/images/rocket.png" alt="FISSA BD" />
               </div>
             </div>         
       </div>
@@ -305,7 +312,9 @@ export default function Home() {
           <div className="w-40 h-1.5 rounded-lg bg-green"></div>
         </div>
 
-        {/* <div className='flex flex-wrap justify-center pt-16 gap-10'>
+
+
+        <div className='flex flex-wrap justify-center pt-16 gap-10'>
           <div className='w-80  h-80 p-7 bg-white border-2 rounded-xl border-grey hover:border-green' data-aos="zoom-in-right" data-aos-duration="1500"> 
             <img src="/images/bkash.png" alt="FISSA BD" />
             <h3 className='text-xl font-bold'>Bkash</h3>
@@ -319,7 +328,7 @@ export default function Home() {
             <h3 className='text-xl font-bold'>Rocket</h3>
             <p className=''>Merchant: 101-202-303</p>
           </div>
-        </div> */}
+        </div>
     </div>
     </div>
 
@@ -333,7 +342,7 @@ export default function Home() {
         </div>
       </div>
       <div className='flex justify-center items-center'>
-        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 flex items-center'>
+        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateBkash}>
         <img src="/images/bkash.png" alt="FISSA BD" />
         </div>
       </div>
@@ -343,14 +352,14 @@ export default function Home() {
         </div>
       </div>
       <div className='flex justify-center items-center'>
-        <div className='rounded-full w-28 h-28 overflow-hidden hover:border-green hover:border-4 bg-white flex items-center'>
+        <div className='rounded-full w-28 h-28 overflow-hidden hover:border-green hover:border-4 hover:cursor-pointer bg-white flex items-center' onClick={navigateRocket}>
           <img src="/images/rocketpay.png" alt="FISSA BD" />    
         </div>
       </div>
       <div>5</div>
       <div>6</div>
       <div className='flex justify-self-end items-center'>
-        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 flex items-center'>
+        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateBkash}>
           <img src="/images/rocketpay.png" alt="FISSA BD" />
         </div>
       </div>
@@ -360,7 +369,7 @@ export default function Home() {
         </div>
       </div>
       <div className=''>
-        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 flex items-center'>
+        <div className='rounded-full w-28 h-28 overflow-hidden bg-white hover:border-green hover:border-4 hover:cursor-pointer flex items-center' onClick={navigateBkash}>
           <img src="/images/rocketpay.png" alt="FISSA BD" />
         </div>
       </div>
@@ -372,6 +381,8 @@ export default function Home() {
 
     </div>
     </div>
+
+
 
     <Footer/>
 

@@ -79,14 +79,14 @@ export default function Home() {
     <div className='bg-cover bg-no-repeat bg-[url("/images/cloud.png")] h-auto'> 
             <div className='flex justify-center items-center xl:text-left text-center max-w-6xl mx-auto xl:px-0 px-8'>
               <div className='w-3/4'> 
-                <p className='mt-8'>Starting at ৳800/month</p>
-                <h1 className='sm:text-4xl text-2xl font-bold mt-8'>Lightning-Fast Connectivity & The Future of Reliable 24/7 Internet Performance</h1>
-                <p className=''>Recognized as Dhaka city's most dependable local internet service provider, FISSA has been bridging digital divides since July 2001. Our mission? Delivering high-speed broadband at affordable rates, right to the doorsteps of our cherished local community.</p>
+                <p data-aos="fade-right" data-aos-duration="2000" className='mt-8'>Starting at ৳800/month</p>
+                <h1 data-aos="zoom-in-right" data-aos-duration="1500" className='sm:text-4xl text-2xl font-bold mt-8'>Lightning-Fast Connectivity & The Future of Reliable 24/7 Internet Performance</h1>
+                <p data-aos="fade-right" data-aos-duration="2000" className=''>Recognized as Dhaka city's most dependable local internet service provider, FISSA has been bridging digital divides since July 2001. Our mission? Delivering high-speed broadband at affordable rates, right to the doorsteps of our cherished local community.</p>
                 <div className='mt-8'>
-                  <button className='bg-green text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>SEE OUR PLANS</button>
+                  <button data-aos="fade-up" data-aos-duration="1500"className='bg-green text-white font-bold px-8 py-4 rounded-md hover:opacity-80'>SEE OUR PLANS</button>
                 </div>
               </div>
-              <div className='md:flex hidden items-center justify-center w-1/4 h-2/5 py-8'>
+              <div data-aos="fade-up" data-aos-duration="2000"className='md:flex hidden items-center justify-center w-1/4 h-2/5 py-8'>
                 <img className=""src="/images/rocket.png" alt="FISSA BD" />
               </div>
             </div>         

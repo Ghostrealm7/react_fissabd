@@ -95,7 +95,7 @@ export default function Home() {
     
     <div className=''>
     <div id="section-1" className='max-w-6xl mx-auto text-center py-20 xl:px-0 px-8'>
-        <div data-aos="zoom-in" className='flex items-center flex-col gap-3 pt-4'> 
+        <div data-aos="fade-up" className='flex items-center flex-col gap-3 pt-4'> 
           <h1 className='text-4xl font-bold leading-tight'> Our Services</h1>
           <div className="w-36 h-1.5 rounded-lg bg-green"></div>
         </div>
@@ -308,7 +308,7 @@ export default function Home() {
         <div className=''>
         </div>
       </div>
-      <div data-aos="zoom-out" className='flex justify-center items-center'>
+      <div data-aos="zoom-in" className='flex justify-center items-center'>
         <div className=''>
         <FaEarthAmericas className="text-9xl mx-auto text-white"/>
         </div>
